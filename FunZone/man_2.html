@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sắp xếp mảng số nguyên</title>
+</head>
+<body>
+  <label for="numbers">Nhập mảng số nguyên (cách nhau bằng dấu cách):</label>
+  <input type="text" id="numbers" name="numbers">
+  <button onclick="sortArray()">Sắp xếp</button>
+  <div id="result"></div>
+  <script>
+    function sortArray() {
+      var numbersInput = document.getElementById("numbers");
+      var numbers = numbersInput.value.split(" ");
+      
+      // Chuyển đổi các giá trị trong mảng thành số nguyên
+      for (var i = 0; i < numbers.length; i++) {
+        numbers[i] = parseInt(numbers[i].trim());
+      }
+
+      numbers.sort(function(a, b) {
+        return a - b;
+      });
+
+      document.getElementById("result").innerHTML = "Mảng sau khi sắp xếp: " + numbers;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* CSS chung cho toàn bộ trang web */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 25px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  #content{
+    background-image:url("https://tse3.mm.bing.net/th?id=OIP.zzSgwDyd5YR7nr7e30v8-QHaHa&pid=Api&P=0&h=180");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+  
+  }
+
+  section h2 {
+    margin-top: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+/* Hiệu ứng gạch chân dưới */
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Hiệu ứng thay đổi màu chữ */
+  nav ul li a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }
+
+  a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
+
+  a {
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }

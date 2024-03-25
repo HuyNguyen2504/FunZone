@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+    font-size: 25px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section#content {
+    padding: 20px;
+  }
+  #content{
+    background-image:url("https://tse3.mm.bing.net/th?id=OIP.zzSgwDyd5YR7nr7e30v8-QHaHa&pid=Api&P=0&h=180");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+  
+  }
+  
+  .book {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .book img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .book h3 {
+    margin: 10px 0;
+  }
+  
+  .book p {
+    margin: 5px 0;
+  }
+
+  .book img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .delete-button button{
+    background-color: #000;
+    color: aliceblue;
+    font-size: medium;
+  }
+
+  .delete-btn {
+    background-color: #000;
+    color: aliceblue;
+  }
+
+  button.delete-btn{
+    color:aliceblue;
+    background-color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  button.delete-btn::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  button.delete-btn:hover::after {
+    transform: scaleX(1);
+  }
+
+  button.delete-btn {
+    transition: color 0.3s ease-in-out;
+  }
+
+  button.delete-btn:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }
+
+  .button-container button {
+    margin-left: 10px;    color: aliceblue  ;
+    background-color: #000;
+    font-size: larger;
+}
+  
+  button.addtocart {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  button.addtocart{
+    color:aliceblue;
+    background-color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  button.addtocart::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  button.addtocart:hover::after {
+    transform: scaleX(1);
+  }
+
+  button.addtocart {
+    transition: color 0.3s ease-in-out;
+  }
+
+  button.addtocart:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }
+
+  a{
+    color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color:#000;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  a:hover::after {
+    transform: scaleX(1);
+  }
+
+  a {
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }
+
+ .button-container button{
+    color:aliceblue;
+    background-color: #000;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .button-container button::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out; 
+  }
+
+  .button-container button:hover::after {
+    transform: scaleX(1);
+  }
+
+  .button-container button{
+    transition: color 0.3s ease-in-out;
+  }
+
+  .button-container button:hover {
+    color: #f00; /* Màu chữ thay đổi khi di chuột vào */
+  }
