@@ -7,9 +7,9 @@
 </head>
 <body>
   <header>
-    <nav>
-      <h1>FunZone<br><br> Xin kính chào bạn đọc !</h1>
-    </nav>
+    <div class="logo">
+      Fun<span>Zone</span>
+  </div>
   </header>
   <header>
     <nav>
@@ -23,9 +23,16 @@
         <li><a href="register.html">Đăng ký</a></li>
         <li><a href="index.html">Đăng Xuất</a></li>
         <li><a href="lien-he.html">Liên hệ</a></li>
+        <hr>
+        <li><a href="hai_kich.html " >Hài kịch</a></li>
+        <li><a href="kinh-di.html" >Kinh dị</a></li>
+        <li><a href="tinh-cam.html">Tình cảm</a></li>
+        <li><a href="tieu-thuyet.html" >Tiểu thuyết</a></li>  
       </ul>
       <hr>
-      <p style="font-size: 25px;"> Xin Chào <span id="username"> ! </span> </p>    
+      <div class="logo">
+        Xin<span> Chào !</span>
+    </div>     
     </nav>
   </header>
   
@@ -36,8 +43,9 @@
       <img src="th (1).jpg" alt="Book 1">
       <h3>The Host</h3>
       <p>Tác giả: Andree</p>
-      <p>Giá: $19.99</p>
-      <button class="addtocart">Thêm vào giỏ hàng</button>
+      <p>Giá: $20</p>
+      <input type="number" id="quantity4" value="1">
+      <button class="addtocart" onclick="addtocart4()">Thêm vào giỏ hàng</button>
     </div>
     
     <div class="book">

@@ -208,6 +208,70 @@ function addtocart2() {
     sum_all += totalPrice; // Cập nhật tổng số tiền
     updateTotalAmount();
     checkEmptyCart();
+}
+
+function addtocart3() {
+    var productName = "Du Học";
+    var productPrice = 13;
+    var productImage = "th.jpg";
+    var quantity = parseInt(document.getElementById("quantity3").value);
+
+    var totalPrice = quantity * productPrice;
+
+    var cartCount = parseInt(localStorage.getItem("cartCount")) || 0;
+
+    // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
+    var existingProductIndex = findProductIndex(productName);
+    if (existingProductIndex === -1) {
+        // Sản phẩm chưa tồn tại trong giỏ hàng, thêm vào
+        localStorage.setItem("productName" + cartCount, productName);
+        localStorage.setItem("productPrice" + cartCount, totalPrice);
+        localStorage.setItem("productImage" + cartCount, productImage);
+        localStorage.setItem("quantity" + cartCount, quantity);
+        localStorage.setItem("cartCount", cartCount + 1);
+    } else {
+        // Sản phẩm đã tồn tại, cập nhật số lượng
+        var existingQuantity = parseInt(localStorage.getItem("quantity" + existingProductIndex));
+        localStorage.setItem("quantity" + existingProductIndex, existingQuantity + quantity);
+    }
+
+    alert("Đã thêm vào giỏ hàng");
+
+    sum_all += totalPrice; // Cập nhật tổng số tiền
+    updateTotalAmount();
+    checkEmptyCart();
+}
+
+function addtocart4() {
+    var productName = "The host";
+    var productPrice = 20;
+    var productImage = "th (1).jpg";
+    var quantity = parseInt(document.getElementById("quantity4").value);
+
+    var totalPrice = quantity * productPrice;
+
+    var cartCount = parseInt(localStorage.getItem("cartCount")) || 0;
+    
+    // Kiểm tra xem sản phẩm đã tồn tại trong giỏ hàng chưa
+    var existingProductIndex = findProductIndex(productName);
+    if (existingProductIndex === -1) {
+        // Sản phẩm chưa tồn tại trong giỏ hàng, thêm vào
+        localStorage.setItem("productName" + cartCount, productName);
+        localStorage.setItem("productPrice" + cartCount, totalPrice);
+        localStorage.setItem("productImage" + cartCount, productImage);
+        localStorage.setItem("quantity" + cartCount, quantity);
+        localStorage.setItem("cartCount", cartCount + 1);
+    } else {
+        // Sản phẩm đã tồn tại, cập nhật số lượng
+        var existingQuantity = parseInt(localStorage.getItem("quantity" + existingProductIndex));
+        localStorage.setItem("quantity" + existingProductIndex, existingQuantity + quantity);
+    }
+    
+    alert("Đã thêm vào giỏ hàng");
+    
+    sum_all += totalPrice; // Cập nhật tổng số tiền
+    updateTotalAmount();
+    checkEmptyCart();
     }
     
 
